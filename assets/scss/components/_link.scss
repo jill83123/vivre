@@ -1,0 +1,9 @@
+.link-accent-200 {
+  &:hover, &:active {
+    color: $accent-300 !important;
+  }
+
+  &.disabled {
+    color: $neutral-300;
+  }
+}

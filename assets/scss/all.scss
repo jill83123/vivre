@@ -1,0 +1,20 @@
+@import 'bootstrap/scss/functions';
+@import 'utils/variables';
+@import 'bootstrap/scss/variables-dark';
+@import "bootstrap/scss/maps";
+@import 'utils/utilities';
+@import 'bootstrap';
+
+@import '/node_modules/swiper/swiper-bundle.min.css';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/button';
+@import 'components/link';
+@import 'components/badge';
+
+@import 'layout/navbar';
+@import 'layout/footer';
+
+@import 'pages/index';

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap');
+@import 'bootstrap-icons/font/bootstrap-icons.min.css';
+
+body {
+  font-family: 'Noto Serif TC', serif;
+}
+
+.font-newsreader {
+  font-family: 'Newsreader', serif;
+}
+
+// bootstrap-icons
+.bi {
+  font-size: 24px;
+
+  &::before {
+    display: block;
+  }
+}

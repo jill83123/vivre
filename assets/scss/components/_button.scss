@@ -1,0 +1,39 @@
+.btn {
+  padding: 12px 20px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 16px 24px;
+  }
+}
+
+.btn.disabled {
+  background-color: $neutral-200;
+}
+
+.btn.btn-accent-200 {
+  border: 0;
+
+  &:hover, &:active {
+    background-color: $accent-300;
+  }
+}
+
+.btn.btn-neutral-100 {
+  color: $neutral-400;
+
+  &:hover, &:active {
+    color: $neutral-500;
+    background-color: $neutral-200;
+  }
+
+  &.disabled {
+    color: $neutral-300;
+  }
+}
+
+.btn-outline-gray-400 {
+  &[disabled] {
+    color: $neutral-200;
+    border-color: $neutral-200;
+  }
+}

@@ -1,0 +1,63 @@
+body:has(.navbar-collapse.collapsing, .navbar-collapse.show) {
+  .navbar {
+    inset: 0;
+    align-items: start;
+
+    .logo {
+      visibility: hidden;
+    }
+  }
+}
+
+body:has(.navbar-collapse.show) {
+  overflow: hidden;
+
+  .navbar-collapse ul {
+    height: calc(100vh - 126px - 32px);
+    overflow: auto;
+  }
+}
+
+.navbar {
+  z-index: 9999;
+
+  & .logo {
+    visibility: visible;
+  }
+
+  & form[role='search'] {
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 276px;
+    }
+  }
+
+  &-toggler {
+    &:focus {
+      box-shadow: none;
+    }
+
+    .bi-list {
+      display: none;
+    }
+
+    .bi-x {
+      display: block;
+    }
+
+    &[aria-expanded='false'] {
+      .bi-list {
+        display: block;
+      }
+
+      .bi-x {
+        display: none;
+      }
+    }
+  }
+
+  .navbar-content {
+    transition: all 0.3s ease;
+  }
+}
