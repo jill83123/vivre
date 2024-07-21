@@ -47,6 +47,17 @@ const lifeThemeSwiper = new Swiper('#lifeThemeSwiper', {
   },
 });
 
+const extendReadSwiper = new Swiper('#extendReadSwiper', {
+  slidesPerView: 1,
+  allowTouchMove: true,
+  breakpoints: {
+    768: {
+      allowTouchMove: false,
+    },
+  },
+  spaceBetween: 24,
+});
+
 const navbarContent = document.querySelector('.navbar-content');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 99) {

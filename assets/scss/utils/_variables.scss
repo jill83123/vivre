@@ -466,6 +466,7 @@ $spacers: (
   4: 16px,
   5: 20px,
   6: 24px,
+  7: 28px,
   8: 32px,
   9: 36px,
   10: 40px,
@@ -1728,10 +1729,14 @@ $breadcrumb-font-size:              null !default;
 $breadcrumb-padding-y:              0 !default;
 $breadcrumb-padding-x:              0 !default;
 $breadcrumb-item-padding-x:         .5rem !default;
-$breadcrumb-margin-bottom:          1rem !default;
+// $breadcrumb-margin-bottom:          1rem !default;
+$breadcrumb-margin-bottom:          0 !default; // customized
 $breadcrumb-bg:                     null !default;
-$breadcrumb-divider-color:          var(--#{$prefix}secondary-color) !default;
-$breadcrumb-active-color:           var(--#{$prefix}secondary-color) !default;
+// $breadcrumb-divider-color:          var(--#{$prefix}secondary-color) !default;
+// $breadcrumb-active-color:           var(--#{$prefix}secondary-color) !default;
+// customized
+$breadcrumb-divider-color:          $neutral-400 !default;
+$breadcrumb-active-color:           $accent-200 !default;
 $breadcrumb-divider:                quote("/") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
