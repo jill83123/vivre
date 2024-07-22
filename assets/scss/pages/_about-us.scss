@@ -1,0 +1,32 @@
+.about-banner {
+  height: 240px;
+
+  @include media-breakpoint-up(lg) {
+    height: 454px;
+  }
+}
+
+.about-content img {
+  height: 200px;
+
+  @include media-breakpoint-up(lg) {
+    height: 390px;
+  }
+}
+
+.about-events {
+  time {
+    display: inline-block;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    font-weight: $font-weight-bold;
+  }
+
+  .month {
+    min-width: 50px;
+
+    @include media-breakpoint-up(md) {
+      min-width: 64px;
+    }
+  }
+}
