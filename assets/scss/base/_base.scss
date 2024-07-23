@@ -1,9 +1,13 @@
 body {
   font-weight: $font-weight-semibold;
   letter-spacing: 0.05em;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 60px);
   margin-top: 60px;
 
   @include media-breakpoint-up(lg) {
+    min-height: calc(100vh - 124px);
     margin-top: 124px;
   }
 }
@@ -22,6 +26,7 @@ ol, ul {
 
 input {
   all: unset;
+  box-sizing: border-box;
 
   &:focus {
     color: $gray-900;
