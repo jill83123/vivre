@@ -589,6 +589,7 @@ $utilities: map-merge(
     "color": (
       property: color,
       responsive: true,
+      state: hover,
       class: text,
       local-vars: (
         "text-opacity": 1
