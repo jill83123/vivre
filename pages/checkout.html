@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <%- include('./layout/head', { title: '付款' }); -%>
+  <body>
+    <%- include('./layout/navbar'); -%>
+
+    <main class="container pt-4 pb-15 pt-lg-17 pb-lg-25">
+      <nav class="fs-3_5 fs-lg-4 py-3 mb-2 mb-lg-5" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+          <li class="breadcrumb-item"><a href="subscribe.html">訂閱方案</a></li>
+          <li class="breadcrumb-item active" aria-current="page">付款</li>
+        </ol>
+      </nav>
+
+      <h1 class="fs-7 fs-lg-10 mb-10 mb-lg-12">付款</h1>
+
+      <div class="row">
+        <div class="col-lg-7 mb-6 mb-lg-0">
+          <section class="bg-white border border-primary-300 rounded-3 p-6 p-lg-7 p-xl-10 mb-6">
+            <h2 class="text-black fs-5 fs-lg-6 mb-6 mb-lg-10">購買人</h2>
+            <form action="#" class="needs-validation" novalidate>
+              <div class="mb-4">
+                <label for="userName" class="form-label fw-bold mb-3">姓名</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="userName"
+                  placeholder="請輸入姓名"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label for="password" class="form-label fw-bold mb-3">密碼</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="請輸入密碼"
+                  required
+                />
+              </div>
+              <div class="mb-6">
+                <label for="email" class="form-label fw-bold mb-3">電子信箱</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="請輸入電子信箱"
+                  required
+                />
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rememberMyInfo" />
+                <label class="form-check-label" for="rememberMyInfo">記住我的資訊</label>
+              </div>
+            </form>
+          </section>
+
+          <section class="bg-white border border-primary-300 rounded-3 p-6 p-lg-7 p-xl-10">
+            <h2 class="text-black fs-5 fs-lg-6 mb-6 mb-lg-10">付款方式</h2>
+            <from>
+              <p class="font-newsreader lh-md fw-bold tracking-widest mb-4">Pay With</p>
+              <div class="form-check mb-6 mb-lg-10">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="creditCard"
+                  checked
+                />
+                <label class="form-check-label" for="creditCard">信用卡</label>
+              </div>
+              <div class="mb-6">
+                <label for="creditCardNumber" class="form-label fw-bold mb-3">信用卡號碼</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="creditCardNumber"
+                  placeholder="1234 5678 1234 5678"
+                  required
+                />
+              </div>
+              <div class="d-flex gap-6 mb-6">
+                <div class="w-50">
+                  <label for="expiredDate" class="form-label fw-bold mb-3">過期日</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="expiredDate"
+                    placeholder="ＭＭ/YY"
+                    required
+                  />
+                </div>
+                <div class="w-50">
+                  <label for="cardAuthCode" class="form-label fw-bold mb-3">認證碼</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cardAuthCode"
+                    placeholder="CVV"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rememberCardInfo" />
+                <label class="form-check-label" for="rememberCardInfo">記住卡片資訊</label>
+              </div>
+            </from>
+          </section>
+        </div>
+
+        <div class="col-lg-5">
+          <section class="bg-white border border-primary-300 rounded-3 p-6 p-lg-7 p-xl-10">
+            <h2 class="text-accent-200 fs-5 fs-lg-6 mb-6 mb-lg-10">訂單資訊</h2>
+            <div
+              class="border-top border-bottom border-gray-200 fs-4 fs-lg-5 lh-md fw-bolder py-6 mb-6 mb-lg-10"
+            >
+              <div class="d-flex justify-content-between mb-3">
+                <p>輕量型方案</p>
+                <p class="font-newsreader">NT 1,188</p>
+              </div>
+              <p class="text-gray-400 fs-4 fw-bold">年繳</p>
+            </div>
+            <div class="mb-6 mb-lg-10">
+              <label for="discountCode" class="form-label fw-bold mb-3">折扣碼</label>
+              <div class="d-flex gap-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="discountCode"
+                  placeholder="請輸入折扣碼"
+                  required
+                />
+                <button
+                  type="button"
+                  class="btn btn-gray-100 text-gray-400 fw-bold lh-md flex-shrink-0 rounded-pill py-3 px-5"
+                  disabled
+                >
+                  套用
+                </button>
+              </div>
+            </div>
+            <div class="border-top border-bottom border-gray-200 py-6 mb-6 mb-lg-10">
+              <div
+                class="d-flex justify-content-between align-items-center text-gray-500 fw-bold mb-3"
+              >
+                <p class="lh-md">小計</p>
+                <p class="font-newsreader fs-4 fs-lg-5 lh-md">NT 1,188</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center text-gray-500 fw-bold">
+                <p class="lh-md">折扣</p>
+                <p class="font-newsreader fs-4 fs-lg-5 lh-md">0</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-start mb-6 mb-lg-10 fw-bold">
+              <p class="lh-md">總計</p>
+              <p class="font-newsreader fs-6 fs-lg-7 text-gray-600 lh-md">NT 1,188</p>
+            </div>
+            <button
+              type="submit"
+              class="d-flex justify-content-center align-items-center gap-3 w-100 btn btn-accent-200 rounded-pill text-white fw-bold tracking-widest lh-md fs-4 fs-lg-5"
+            >
+              立即付款<i class="bi bi-arrow-right fs-5 fs-lg-6"></i>
+            </button>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+  </body>
+</html>
