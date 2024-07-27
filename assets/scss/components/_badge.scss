@@ -1,3 +1,8 @@
 .badge {
   background-color: $primary-300;
+
+  &:hover {
+    color: $white;
+    background-color: $primary-400;
+  }
 }
